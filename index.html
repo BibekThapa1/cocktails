@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cocktails</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div id="cocktails-container">
-   <div class="heading">
-    <h1>Cocktails API</h1>
-    <div class="search">
-        <input type="text"
-        placeholder="Search Your Favorite Cocktail"
-        name="drink">
+      <div class="heading">
+        <h1>Cocktails API</h1>
+        <form class="search">
+          <input
+            type="text"
+            placeholder="Search Your Favorite Cocktail"
+            name="drink"
+          />
+        </form>
+      </div>
+      <section class="loader">
+        <img src="./loading.gif" alt="" />
+      </section>
+      <div class="title"></div>
+      <div class="cocktails"></div>
     </div>
-   </div>
-   <section class="loader">
-    <img src="./loading.gif" alt="">
-</section>
-   <div class="cocktails">
-    <div class="cocktail">
-        <img src="https://www.thecocktaildb.com/images/media/drink/4n1ipk1614009624.jpg" alt="">
-        <h3 class="title">SNOWDAY</h3>
-    </div>
-   </div>
-    </div>
-    <script src="./app.js"></script>
-</body>
+    <script type="module" src="./app.js"></script>
+  </body>
 </html>
