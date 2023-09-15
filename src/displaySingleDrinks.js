@@ -23,7 +23,7 @@ function displaySingleDrink({ drinks }) {
   singleDrinkImg.src = img;
   title.textContent = name;
   description.textContent = desc;
-  console.log(ingredient);
+
   const ingredients = ingredient
     .map((i) => {
       if (!i) return;
@@ -32,7 +32,6 @@ function displaySingleDrink({ drinks }) {
         `;
     })
     .join(" ");
-  console.log(ingredients);
   checkBox.innerHTML = ingredients;
 }
 

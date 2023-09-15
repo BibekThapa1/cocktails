@@ -4,7 +4,6 @@ import { hideLoading } from "./toogleLoader.js";
 
 const displayDrinks =  ({ drinks }) => {
 
-  console.log(drinks);
   let container = get(".cocktails");
   let title = get(".title");
   if (!drinks) {
@@ -13,7 +12,7 @@ const displayDrinks =  ({ drinks }) => {
     title.textContent = "Err.. The drinks are not found";
     return;
   }
-  console.log(drinks);
+
   const drink = drinks
     .map((drink) => {
       const { idDrink: id, strDrink: name, strDrinkThumb: img } = drink;
