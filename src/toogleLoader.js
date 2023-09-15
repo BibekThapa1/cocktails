@@ -2,7 +2,7 @@ import get from "./getElement.js";
 
 let loaderBtn = get(".loader");
 
-export const showLoading = () =>{
+export const showLoading =  () =>{
     loaderBtn.classList.add("show-loader");
 }
 

@@ -182,13 +182,15 @@ p {
 .heading input:focus {
     border: 1px solid var(--clr-grey-4);
 }
-input::placeholder{
+
+input::placeholder {
     text-transform: uppercase;
 }
+
 .cocktails {
-    width:85vw;
+    width: 85vw;
     max-width: 1170px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 /* Loader */
@@ -244,18 +246,110 @@ input::placeholder{
 
 @media screen and (min-width:576px) {
     .cocktails {
-        display:grid;
-        gap:2.5rem;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-        column-gap:3rem;
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap: 3rem;
     }
 }
 
-@media screen and (min-width:1200px) {    
-    .heading input{
-        width:38vw;
+@media screen and (min-width:1200px) {
+    .heading input {
+        width: 38vw;
     }
-    .cocktails{
-        width:95vw;
+
+    .cocktails {
+        width: 95vw;
+    }
+}
+
+
+/* Product.html */
+
+
+#drink {
+    width: 90vw;
+    margin: 6rem auto;
+    padding: 5px 30px;
+    max-width: 1500px;
+}
+
+#drink img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    box-sizing: var(--dark-shadow);
+}
+
+#drink .img-details {
+    margin-top: 2.5rem;
+    padding-left: 5px;
+}
+
+#drink .img-details h2 {
+    margin-bottom: 5px;
+}
+
+#drink .img-details p {
+    font-size: 1.01rem;
+}
+
+#drink .img-details .checkbox p {
+    margin-bottom: 0px;
+}
+
+#drink .img-details .checkbox p {
+    color: var(--clr-black);
+}
+
+#drink .img-details p i {
+    display: inline-block;
+    transform: translateY(5%);
+    padding-right: 10px;
+}
+
+#drink .back-btn {
+    border: none;
+    background-color: var(--clr-primary-5);
+    padding: 5px 10px;
+    margin-top: 1.5rem;
+    font-size: 1.02rem;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    letter-spacing: 2px;
+    color: var(--clr-black);
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+#drink .back-btn:hover {
+    background-color: var(--clr-primary-3);
+    color: var(--clr-white)
+}
+
+@media screen and (min-width:768px) {
+    #drink {
+        width: 85vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    #drink .img-section {
+        text-align: right;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.21);
+        max-width: 500px;
+    }
+
+    #drink .img-details {
+        max-width: 500px;
+    }
+
+    #drink img {
+        display: block;
+        text-align: right;
+        width: 100%;
     }
 }

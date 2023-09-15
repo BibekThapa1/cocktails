@@ -18,7 +18,7 @@ const displayDrinks =  ({ drinks }) => {
     .map((drink) => {
       const { idDrink: id, strDrink: name, strDrinkThumb: img } = drink;
       return `
-    <a href="drink.html">
+    <a href="drink.html?i=${id}">
         <div class="cocktail" data-id="${id}">
         <img src="${img}" alt="${name}">
         <h3 class="title">${name}</h3>
